@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+<!--   <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/skeleton.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--   <link rel="icon" type="image/png" href="images/favicon.png"> -->
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <h1>WEATHER YAAAAS</h1>
+
+
+    <form id="city-search">
+      <div class="row">
+        <div class="one-half column">
+          <label for="city-name">City Name</label>
+          <input class="u-full-width" type="text" id="city-name" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-half columns">
+          <input type="submit" class="button-primary">
+          <button type="reset" id="clear-button">Clear</button>
+        </div>
+      </div>
+      </form>
+  </div>
+
+  <div id="result-container">
+    <div id="result" class="container hidden">
+    </div>
+  </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="lodash.js"></script>
+    <script type="text/template" id="search-template">
+      <section class="search-results">
+        <div class="row">
+          <div class="one-half column">
+            <a href=""><%= cityName %>, <%= country %></a>
+            <small>Lat: <%= latitude %>, Lon: <%= longitude %></small>
+          </div>
+        </div>
+      </section>
+    </script>
+    <script src="application.js"></script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
