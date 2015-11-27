@@ -34,7 +34,7 @@
   <div class="container">
     <h1>WEATHER YAAAAS</h1>
 
-
+  <p class="city-result">cats</p>
     <form id="city-search">
       <div class="row">
         <div class="one-half column">
@@ -55,6 +55,9 @@
     <div id="result" class="container hidden">
     </div>
   </div>
+  <div id="condition-container">
+    <div id="conditions"></div>
+  </div>
 
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="lodash.js"></script>
@@ -62,10 +65,23 @@
       <section class="search-results">
         <div class="row">
           <div class="one-half column">
-            <a href=""><%= cityName %>, <%= country %></a>
+            <a class="city-data"><span class="city"><%= cityName %></span>, <span class="country"><%= country %></span></a>
             <small>Lat: <%= latitude %>, Lon: <%= longitude %></small>
           </div>
         </div>
+      </section>
+    </script>
+    <script type="text/template" id="conditions-template">
+      <section class="conditions-result">
+      <div class="row">
+        <div class="one-half column">
+          <h3><%= city %></h3>
+          <p>Temperature: <%= tempC %> C</p>
+          <p>But Feels Like: <%= feelsLike %> C</p>
+          <p><%= weather %></p>
+          <p>Observed at: <%= obsTime %></p>
+        </div>
+      </div>
       </section>
     </script>
     <script src="application.js"></script>
