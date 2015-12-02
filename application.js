@@ -1,6 +1,6 @@
 $(function() {
 
-  var API_KEY = "905ae13579633139";
+  var API_KEY = ;
   var searchTemplate = _.template($('#search-template').html());
   var conditionsTemplate = _.template($('#conditions-template').html());
 
@@ -62,11 +62,6 @@ $(function() {
   });
 
 });
-
-// http://api.wunderground.com/api/905ae13579633139/conditions/q/CA/San_Francisco.json
-// http://api.wunderground.com/api/API_KEY/conditions/q/CountryorState/CityName.json
-
-//GET http://api.wunderground.com/api/905ae13579633139/features/settings/q/query.format
 
 
 
