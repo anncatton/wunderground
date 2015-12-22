@@ -1,6 +1,6 @@
 $(function() {
 
-  var API_KEY = "905ae13579633139";
+  var API_KEY = ;
   var searchTemplate = _.template($('#search-template').html());
   var conditionsTemplate = _.template($('#conditions-template').html());
 
@@ -62,3 +62,4 @@ $(function() {
   });
 
 });
+
