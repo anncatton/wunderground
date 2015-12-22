@@ -62,30 +62,3 @@ $(function() {
   });
 
 });
-
-// http://api.wunderground.com/api/905ae13579633139/conditions/q/CA/San_Francisco.json
-// http://api.wunderground.com/api/API_KEY/conditions/q/CountryorState/CityName.json
-
-//GET http://api.wunderground.com/api/905ae13579633139/features/settings/q/query.format
-
-
-
-
-    // $.getJSON(request).then
-
-
-//       // setTimeout(function() {
-//       //   $('#result').html(output).removeClass('hidden');
-//       // }, 1000);
-
-//     });
-
-//   });
-
-//   // $('#clear-button').on('click', function() {
-//   //   $('#result').addClass('hidden');
-//   //   setTimeout(function() {
-//   //     $('#result').html('');
-//   //   }, 1000);
-//   // });
-// });

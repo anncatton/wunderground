@@ -1,10 +1,2 @@
-Sinatra
-=============
-
-Brought to you by Lighthouse Labs
-
-## Getting Started
-
-1. `bundle install`
-2. `shotgun -p 3000 -o 0.0.0.0`
-3. Visit `http://localhost:3000/` in your browser
+Simple page that queries the Weather Underground API for current weather conditions based on city name.
+Lighthouse assignment to get practice working with 3rd party APIs. Uses jQuery, lodash and Skeleton CSS.
