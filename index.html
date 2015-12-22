@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/app.css">
 
-  <meta charset="utf-8">
+  </head>
+  <body>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="stylesheets/normalize.css">
-  <link rel="stylesheet" href="stylesheets/skeleton.css">
-  <link rel="stylesheet" href="stylesheets/app.css">
+    <div class="container">
+      <h1>WEATHER YAAAAS</h1>
 
-</head>
-<body>
-
-  <div class="container">
-    <h1>WEATHER YAAAAS</h1>
-
-    <form id="city-search">
-      <div class="row">
-        <div class="one-half column">
-          <label for="city-name">City Name</label>
-          <input class="u-full-width" type="text" id="city-name" required>
+      <form id="city-search">
+        <div class="row">
+          <div class="one-half column">
+            <label for="city-name">City Name</label>
+            <input class="u-full-width" type="text" id="city-name" required>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="one-half columns">
-          <input type="submit" class="button-primary">
-          <button type="reset" id="clear-button">Clear</button>
+        <div class="row">
+          <div class="one-half columns">
+            <input type="submit" class="button-primary" />
+            <button type="reset" id="clear-button">Clear</button>
+          </div>
         </div>
-      </div>
-      </form>
-  </div>
-
-  <div id="result-container">
-    <div id="result" class="container hidden">
+        </form>
     </div>
-  </div>
-  <div id="condition-container">
-    <div id="conditions"></div>
-  </div>
+
+    <div id="result-container">
+      <div id="result" class="container hidden"></div>
+    </div>
+    <div id="condition-container">
+      <div id="conditions"></div>
+    </div>
 
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="lodash.js"></script>
@@ -55,18 +52,18 @@
     </script>
     <script type="text/template" id="conditions-template">
       <section class="conditions-result">
-      <div class="row">
-        <div class="one-half column">
-          <h3><%= city %></h3>
-          <p>Temperature: <%= tempC %> C</p>
-          <p>But Feels Like: <%= feelsLike %> C</p>
-          <p><%= weather %></p>
-          <p>Observed at: <%= obsTime %></p>
+        <div class="row">
+          <div class="one-half column">
+            <h3><%= city %></h3>
+            <p>Temperature: <%= tempC %> C</p>
+            <p>But Feels Like: <%= feelsLike %> C</p>
+            <p><%= weather %></p>
+            <p>Observed at: <%= obsTime %></p>
+          </div>
         </div>
-      </div>
       </section>
     </script>
     <script src="application.js"></script>
 
-</body>
+  </body>
 </html>

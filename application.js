@@ -31,6 +31,7 @@ $(function() {
     });
 
   });
+  
   $('#result').on('click', '.city-data', function(event) {
     event.preventDefault();
     var cityName = $(this).children('.city').text().split(",");
