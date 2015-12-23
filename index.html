@@ -18,8 +18,9 @@
       <form id="city-search">
         <div class="row">
           <div class="one-half column">
-            <label for="city-name">City Name</label>
-            <input class="u-full-width" type="text" id="city-name" required>
+            <h4>What's the weather in ...</h4>
+            <label for="city-name"></label>
+            <input class="u-full-width" type="text" id="city-name" placeholder="Type the name of a city" required>
           </div>
         </div>
         <div class="row">
@@ -54,11 +55,11 @@
       <section class="conditions-result">
         <div class="row">
           <div class="one-half column">
-            <h4><%= city %></h4>
-            <p>Temperature: <%= tempC %> C</p>
-            <p>But Feels Like: <%= feelsLike %> C</p>
-            <p><%= weather %></p>
-            <p>Observed at: <%= obsTime %></p>
+            <h4 class="result"><%= city %></h4>
+            <p class="result">Temperature: <%= tempC %> C</p>
+            <p class="result">Feels Like: <%= feelsLike %> C</p>
+            <p class="result"><%= weather %></p>
+            <p class="result"><%= obsTime %></p>
           </div>
         </div>
       </section>

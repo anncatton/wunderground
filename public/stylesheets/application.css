@@ -1,4 +1,7 @@
 .city, .country {
   cursor: pointer;
-  color: blue;
+}
+
+.result {
+  margin-left: 100px;
 }

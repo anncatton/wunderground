@@ -54,7 +54,7 @@ $(function() {
         feelsLike: conditions.feelslike_c,
         weather: conditions.weather,
         tempC: conditions.temp_c,
-        obsTime: conditions.observation_time,
+        obsTime: conditions.observation_time
       });
       $('#result').hide();
       $('#conditions').html(output);
